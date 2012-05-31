@@ -4,8 +4,8 @@ Geckomath  version 0.01 (alpha)
 0. Dependencies
 ---------------
 
-Geckomath depends on a working LaTeX distribution at the moment.  For Windows,
-you just need to visit
+Geckomath depends on a working LaTeX distribution at the moment (and probably
+will forever).  For Windows, you just need to visit
 
     http://miktex.org/2.9/setup
 
@@ -42,10 +42,6 @@ the following:
     * `statement`
     * `answer` (The short answer)
     * `solution` (The full worked solution)
-
-To `geckomath.ini`, add a section with at least the options `nprobs` and
-`solutions`.  `nprobs` is an integer that denotes the number of foo problems to
-print.  `solutions` is a boolean that toggles full solutions vs. just answers.
 
 3. Questions?
 -------------

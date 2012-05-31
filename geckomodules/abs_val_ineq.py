@@ -1,6 +1,7 @@
 import random
 
 from sympy import *
+# XXX: I am a terrible person for making this a global var
 x = symbols('x')
 
 from Problems import Problem

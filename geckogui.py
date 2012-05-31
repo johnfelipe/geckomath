@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python-32
 # geckogui.py
 
 '''This is the main application script for Geckomath.
