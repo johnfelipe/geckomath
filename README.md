@@ -1,4 +1,4 @@
 geckomath
 =========
 
-A framework for generating 
+A framework for randomly generating math exercises.
