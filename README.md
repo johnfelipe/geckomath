@@ -35,13 +35,13 @@ and add "foo" to the `__all__` variable in `geckomodules/__init__.py`.  In your
 module, create a class that inherits from `Problems.Problem` that has at least
 the following:
 
-    * a class attribute `secname` for the name of the section
-    * a boolean class attribute `printable` that marks whether this is a real problem type
-    * The following object properties:
+* a class attribute `secname` for the name of the section
+* a boolean class attribute `printable` that marks whether this is a real problem type
+* The following object properties:
 
-        * `statement`
-        * `answer` (The short answer)
-        * `solution` (The full worked solution)
+    * `statement`
+    * `answer` (The short answer)
+    * `solution` (The full worked solution)
 
 To `geckomath.ini`, add a section with at least the options `nprobs` and
 `solutions`.  `nprobs` is an integer that denotes the number of foo problems to
