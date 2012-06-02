@@ -17,6 +17,7 @@ develop-eggs
 pip-log.txt
 
 # Unit test / coverage reports
+geckomath.ini
 .coverage
 .tox
 
@@ -25,3 +26,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#vim files
+*.swp

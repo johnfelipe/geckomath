@@ -23,8 +23,8 @@ class AbsValProb(Problem):
 
     @property
     def statement(self):
-        eqn = r'\abs{{{0}}} {1} {2}'.format(
-            latex(self.LHS), self.compop, latex(self.RHS))
+        eqn = r'''\abs{{{0}}} {1} {2}
+        '''.format(latex(self.LHS), self.compop, latex(self.RHS))
         return 'Solve ${}$.'.format(eqn)
 
     @property
@@ -70,7 +70,8 @@ class AbsValProb(Problem):
             ans = r'''An absolute value can never be negative, so there is no
                 solution to this inequality.'''
         else:
-            ans = r''' An absolute value is always positive or zero, so it will
+            ans = r''' 
+            An absolute value is always positive or zero, so it will
                 always be greater than a negative number.  Hence, this
                 inequality is true for all real numbers.'''
 
@@ -84,7 +85,8 @@ class AbsValProb(Problem):
             opop = r'\leq'
             openbrak, closebrak = '[', ']'
         #XXX: make this a template.
-        ans = r'''First, eliminate the absolute value bars by splitting the
+        ans = r'''
+        First, eliminate the absolute value bars by splitting the
             inequality into two inequalities:
             \[
             {LHS} {opop} {nRHS} \qquad \text{{or}} \qquad {LHS} {compop} {RHS}.
@@ -121,8 +123,8 @@ class AbsValProb(Problem):
         \]
         Then solve the linear inequality in the usual way
         \begin{{align*}}
-        {LB1} {compop} &{LHS1} {compop} {UB1} \\
-        {LB2} {compop} &x {compop} {UB2}
+        {LB1} &{compop}  {LHS1} {compop} {UB1} \\
+        {LB2} &{compop}  x {compop} {UB2}
         \end{{align*}}
         So the solution can be expressed in either of the following ways:
         \begin{{align*}}
@@ -226,7 +228,8 @@ class RevAbsValProb(Problem):
             inside = mid - shift
             diff = RHS - LHS
             bound = RHS - shift
-            soln = r'''First look at the endpoints of the interval.  ${RHS}$
+            soln = r'''
+            First look at the endpoints of the interval.  ${RHS}$
             and ${LHS}$ are ${diff}$ units apart, and half of ${diff}$ is
             ${bound}$. So you want to adjust the inequality so that it relates
             $-{bound}$ to ${bound}$, instead of ${LHS}$ to ${RHS}$.  To do

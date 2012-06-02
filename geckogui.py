@@ -88,6 +88,10 @@ class ConfigFrame(wx.Frame):
 
         self.Show(True)
 
+        panel.SetFocus()
+        panel.Bind(wx.EVT_SET_FOCUS, self.onFocus)
+
+
     def build_menu(self):
         'Build a menu that is cross-platform compatible'
         menu_bar = wx.MenuBar()
@@ -153,6 +157,9 @@ class ConfigFrame(wx.Frame):
     def OnPaint(self, event=None):
         pdc = wx.PaintDC(self)
         pdc.Clear()
+
+    def onFocus(self, event):
+        self.panel.SetFocus()
 
     def write_to_file(self, event):
         '''Build a config object, pass it to geckomath.main().'''
