@@ -13,7 +13,7 @@ geckomodules = ['geckomodules.{}'.format(os.path.splitext(module)[0])
 
 setup(
     name='Geckomath',
-    version='0.1',
+    version='0.1.2',
     decription='Randomly generate math problems',
     author='John Dougherty',
     author_email='john.e.dougherty.ii@gmail.com',

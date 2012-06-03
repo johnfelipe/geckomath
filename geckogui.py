@@ -36,7 +36,7 @@ class ConfigFrame(wx.Frame):
     and then adding a button to run geckomath.
     '''
     def __init__(self, parent, id, version, to_file):
-        wx.Frame.__init__(self, parent, id, 'Geckomath v.{}'.format(version),
+        wx.Frame.__init__(self, parent, id, 'Geckomath v{}'.format(version),
                           wx.DefaultPosition, ((774 - 284), 553))
 
         self.to_file = to_file
@@ -285,7 +285,7 @@ if __name__ == '__main__':
         'The main app loop.'
         def OnInit(self):
             self.Init()
-            frame = ConfigFrame(None, -1, 0.1, args.to_file)
+            frame = ConfigFrame(None, -1, '0.1.2', args.to_file)
             frame.Show()
             self.SetTopWindow(frame)
             return True

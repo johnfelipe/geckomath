@@ -1,4 +1,4 @@
-Geckomath  version 0.01 (alpha)
+Geckomath  version 0.1.2 (alpha)
 ===============================
 
 0. Dependencies

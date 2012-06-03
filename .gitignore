@@ -1,8 +1,16 @@
+# test output
+geckomath.ini
+problems.pdf
+solutions.pdf
+
+# compiled python stuff
 *.py[co]
 
 # Packages
 *.egg
 *.egg-info
+auto_build.py
+update
 dist
 build
 eggs
@@ -17,7 +25,6 @@ develop-eggs
 pip-log.txt
 
 # Unit test / coverage reports
-geckomath.ini
 .coverage
 .tox
 
